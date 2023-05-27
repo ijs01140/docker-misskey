@@ -1,0 +1,12 @@
+# config
+/.config/*
+!/.config/example.yml
+!/.config/docker_example.yml
+!/.config/docker_example.env
+docker-compose.yml
+
+# misskey
+/db
+/meili_data
+/redis
+/files
