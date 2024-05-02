@@ -3,6 +3,7 @@
 !/.config/example.yml
 !/.config/default.yml.sample
 !/.config/psql.env.sample
+!/.config/meilisearch.env.sample
 .env
 docker-compose.yml
 
