@@ -1,8 +1,8 @@
 # config
 /.config/*
 !/.config/example.yml
-!/.config/docker_example.yml
-!/.config/docker_example.env
+!/.config/default.yml.sample
+!/.config/psql.env.sample
 docker-compose.yml
 
 # misskey
