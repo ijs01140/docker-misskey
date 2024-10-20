@@ -6,9 +6,10 @@
 !/.config/meilisearch.env.sample
 .env
 docker-compose.yml
+compose.yaml
 
 # misskey
-/db
+/postgresql*
 /meili_data
 /redis
 /files

@@ -2,7 +2,7 @@ version: "3"
 
 services:
   web:
-    image: misskey/misskey:13
+    image: misskey/misskey:2024.10.1
     restart: always
     links:
       - db
@@ -37,13 +37,13 @@ services:
 
   db:
     restart: always
-    image: postgres:15-alpine
+    image: postgres:17-alpine
     networks:
       - internal_network
     env_file:
       - .config/psql.env
     volumes:
-      - ./db:/var/lib/postgresql/data
+      - ./postgresql17:/var/lib/postgresql/data
     healthcheck:
       test: "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"
       interval: 5s
