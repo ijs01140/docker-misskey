@@ -96,7 +96,9 @@ services:
     image: cloudflare/cloudflared:latest
     user: root
     restart: always
-    command: tunnel --no-autoupdate run --token $CLOUDFLARED_TOKEN
+    env_file:
+      - .config/cloudflared.env
+    command: tunnel --no-autoupdate run
     depends_on:
       - web
     networks:
