@@ -4,7 +4,7 @@
 !/.config/default.yml.sample
 !/.config/psql.env.sample
 !/.config/meilisearch.env.sample
-.env
+!/.config/cloudflared.env.sample
 docker-compose.yml
 compose.yaml
 
